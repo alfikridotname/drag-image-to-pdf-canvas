@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag-and-Drop Image on Canvas</title>
+    <style>
+        #canvas-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        #pdf-canvas {
+            border: 1px solid black;
+        }
+
+        #draggable-image {
+            position: absolute;
+            cursor: move;
+        }
+
+        #coordinates {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Drag-and-Drop Image on Canvas</h1>
+    <div id="canvas-container">
+        <canvas id="pdf-canvas"></canvas>
+        <img id="draggable-image"
+            src="https://images.unsplash.com/photo-1719937050446-a121748d4ba0?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Draggable" width="100" height="100">
+    </div>
+    <div id="coordinates">Coordinates: (x: 0, y: 0)</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
